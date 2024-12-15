@@ -1,0 +1,10 @@
+  @font-face {
+    font-family: 'SFUIDisplayLight';
+    src: url('./fonts/sf-ui-display-light-58646b33e0551.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
