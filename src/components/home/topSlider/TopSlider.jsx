@@ -19,12 +19,23 @@ const medicalTerms = [
     definition:
       "the act (or process) of listening to the heart, lung and other body sounds using a stethoscope as part of a medical exam",
     image: "/homepage/1.png",
+    textStyle: "text-left text-[1.2rem] font-sfui  md:text-[40px] text-[#0B4D71] leading-[52px] max-md:leading-relaxed",
   },
   {
     id: 2,
     definition: "Transforming auscultation through AI",
     image: "/homepage/2.png",
     image2: "/homepage/3.png",
+    textStyle: "text-center text-[#D7504A] text-[1.5rem] md:text-[2rem] leading-loose ",
+
+  },
+  {
+    id: 3,
+    definition: "Empowering pediatricians to identify innocent heart murmurs using Al",
+    image: "/homepage/iphone.png",
+    image2: "/homepage/laptop.png",
+    textStyle: "text-left w-[80%] max-md:w-full text-[#D7504A] font-sfui text-[1.4rem] md:text-[31px] leading-snug font-[400] ",
+
   },
   // Add more terms here
 ];
@@ -102,7 +113,7 @@ const TopSlider = () => {
       <img
         src="/homepage/bg.jpg"
         alt="Background"
-        className="w-screen absolute -bottom-9 -z-10"
+        className="w-screen absolute  -bottom-9 -z-10"
       />
       <div className="max-w-screen overflow-hidden">
         <Slider {...settings}>
@@ -116,7 +127,7 @@ const TopSlider = () => {
                   {index % 2 === 0 ? (
                     <div className="grid sm:grid-cols-1 md:grid-cols-[60%_40%] gap-8 items-center">
                       {/* Text Content */}
-                      <div data-aos="fade-right" className="space-y-6">
+                      <div data-aos="fade-right" className={`space-y-6 ${term.textStyle}`}>
                         {term.syllables && (
                           <span className="text-2xl sm:text-4xl md:text-6xl font-[600] font-sfui">
                             {term.syllables.map((syllable, i) => (
@@ -132,7 +143,7 @@ const TopSlider = () => {
                         )}
 
                         {term.definition && (
-                          <span className="text-xl sm:text-2xl md:text-3xl text-[#0B4D71] md:text-5xl font-[400] font-sfui ml-2">
+                          <span className={`ml-2`}>
                             {term.definition}
                           </span>
                         )}
@@ -144,25 +155,49 @@ const TopSlider = () => {
                         </div>
                       </div>
 
+
                       {/* Image Section */}
-                      <div  data-aos="fade-up" className="relative flex gap-4 justify-center items-center">
+                      {/* Image Section */}
+                      <div
+                        data-aos="fade-up"
+                        className={`relative flex gap-4 justify-center items-center ${term.id === 1 ? "" : term.id === 2 ? "bg-blue-100" : ""
+                          }`}
+                      >
                         {term.image && (
                           <img
                             src={term.image}
                             alt={term.term || "Medical Term"}
-                            className="w-full sm:w-auto"
+                            className={`${term.id === 1
+                              ? "w-full sm:w-[80%]  rounded-lg  "
+                              : term.id === 2
+                                ? "w-full  border-4 border-blue-500"
+                                : "w-full mr-[65%] max-lg:w-[30%]  max-lg:mr-0 mt-9"
+                              }`}
                           />
                         )}
                         {term.image2 && (
-                          <div className="absolute">
+                          <div
+                            className={`absolute ${term.id === 2
+                              ? "top-0 right-0"
+                              : term.id === 3
+                                ? "w-[650px] -top-10 max-md:top-8 left-10 max-lg:left-0 max-lg:w-full -z-[10]"
+                                : ""
+                              }`}
+                          >
                             <img
                               src={term.image2}
                               alt={term.term || "Medical Term"}
-                              className="w-full sm:w-auto"
+                              className={`${term.id === 2
+                                ? "opacity-50 "
+                                : term.id === 3
+                                  ? "-z-[100] "
+                                  : ""
+                                }`}
                             />
                           </div>
                         )}
                       </div>
+
                     </div>
                   ) : (
                     <div className="grid sm:grid-cols-1 md:grid-cols-[40%_60%] gap-8 items-center">
@@ -176,7 +211,7 @@ const TopSlider = () => {
                           />
                         )}
                         {term.image2 && (
-                          <div className="absolute -left-[5%] md:-left-[20%] -top-[5%] md:-top-[10%]">
+                          <div className="absolute max-lg:-left-[5%] -left-[20%]   -top-[5%] md:-top-[10%]">
                             <img
                               src={term.image2}
                               alt={term.term || "Medical Term"}

@@ -27,7 +27,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 font-sfui text-[20px]">
+          <nav className="hidden md:flex items-center space-x-8 font-sfui text-[18px]">
             <a href="/" className="text-blue-500 hover:text-blue-700">Home</a>
             <a href="/technology" className="text-gray-500 hover:text-gray-900">Technology</a>
             <a href="/team" className="text-gray-500 hover:text-gray-900">Team</a>
@@ -37,7 +37,7 @@ export default function Header() {
             <a href="/contact" className="text-gray-500 hover:text-gray-900">Contact</a>
             <a 
               href="/login" 
-              className="bg-red-500 text-white px-4 py-2 rounded-[25px] hover:bg-red-600 transition-colors text-[17px]"
+              className="bg-[#D64D47] text-white px-5 py-1 rounded-[25px] hover:bg-red-600 transition-colors text-[16px]"
             >
               LOGIN
             </a>

@@ -10,25 +10,33 @@ const newsItems = [
   {
     id: 1,
     image: "/homepage/1s.png",
-    title: "AuscultTech Dx receives STTR Phase I award",
+    title: "AusculTech Dx receives STTR Phase I award",
     date: "September, 2016",
-    description: "AusculTech Dx receives STTR Phase II award from the National Institutes of Health (NIH). This award supports demonstrating the technical feasibility of the planned StethAid™ platform.",
+    description: "AusculTech Dx receives STTR Phase II award from the National Institutes of Health (NIH). This award supports demonstrating the technical feasibility of the planned StethAidTM platform.",
     link: "#"
   },
   {
     id: 2,
-    image: "/homepage/2s.png",
-    title: "Project StethAid™ awarded Atlantic Pediatric Device Consortium Funding",
+    image: "/homepage/33.jpg",
+    title: "ACME-POCT selects AusculTech Dx for a seed grant",
     date: "August, 2015",
-    description: "Atlantic Pediatric Device Consortium (APDC) is an FDA-funded Consortium that funds, seeds and promotes promising early-stage pediatric devices. The Consortium recognized the potential of Project StethAid™ and selected it for...",
+    description: "A seed grant from Emory/Georgia Tech/Children's based Atlanta Center for Microsystems Engineered Point-of-Care Technologies (ACME POCT) is enabling AusculTech Dx to research and develop next-generation StethAidTM technology.",
     link: "#"
   },
   {
     id: 3,
     image: "/homepage/3s.jpg",
-    title: "AuscultTech Dx receives STTR Phase I award",
+    title: "AusculTech Dx receives STTR PhaseII award",
     date: "June, 2020",
-    description: "AusculTech Dx received its latest STTR Phase I award from the National Institutes of Health (NIH). This award supports research and development into extending the StethAid™ platform for improved home-based...",
+    description: "AusculTech Dx received STTR Phase II award from the National Institutes of Health (NIH). This award will support turther development ot the StethAidTM hardware and sottware and a multi-center trial...",
+    link: "#"
+  },
+  {
+    id: 4,
+    image: "/homepage/red.png",
+    title: "AusculTech DX wins Washington Business Journal 2017 Innovation Award",
+    date: "June, 2020",
+    description: "The Washington Business Journal's annual Innovation Awards honor Greater Washington companies on the cutting edge in technology. AusculTech DX was one ot the 15 honorees selected tor the 2017 Innovation...",
     link: "#"
   }
 ]

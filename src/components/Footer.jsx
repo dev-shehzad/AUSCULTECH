@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Company Info */}
           <div>
-            <h3 className="text-sm font-semibold uppercase mb-4">Auscultech DX</h3>
+            <h3 className="text-[16px]  uppercase mb-4 text-black font-serif font-[400]">Auscultech DX</h3>
             <div className="flex items-start gap-2 text-gray-600">
               <MapPin className="w-5 h-5 text-[#FF5757] shrink-0 mt-1" />
               <p className="text-sm">
@@ -19,7 +19,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase mb-4">Contact</h3>
+            <h3 className="text-[16px]  uppercase mb-4 text-black font-serif font-[400]">Contact</h3>
             <div className="flex items-center gap-2 text-gray-600">
               <Mail className="w-5 h-5 text-[#FF5757]" />
               <a 
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase mb-4">Follow Us</h3>
+            <h3 className="text-[16px]  uppercase mb-4 text-black font-serif font-[400]">Follow Us</h3>
             <a 
               href="#" 
               className="inline-block bg-black rounded-full p-2 hover:opacity-80 transition-opacity"
